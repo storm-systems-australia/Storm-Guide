@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cityMenu" class="menu hidden">
+
+        <div id="mainOptions">
+            <button onclick="selectOption('jobs')">💼 Jobs</button>
+            <button onclick="selectOption('services')">🚓 Police & EMS</button>
+            <button onclick="selectOption('business')">🏪 Businesses</button>
+            <button onclick="selectOption('activities')">🎉 Activities</button>
+        </div>
+        <div id="contentSection" class="hidden">
+            <h2 id="contentHeader"></h2>
+            <pre id="contentText"></pre>
+            <button onclick="backToMenu()">🔙 Back</button>
+        </div>
+        <button class="close" onclick="closeMenu()">❌ Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
